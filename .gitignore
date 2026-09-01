@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+tools/
+*.zip
+paper/*.synctex.gz
+paper/*.log
+paper/*.aux
+paper/*.out
+paper/*.bbl
+paper/*.blg
+.DS_Store
+Thumbs.db
