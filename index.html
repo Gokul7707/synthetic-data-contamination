@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detecting Synthetic-Data Contamination — Gokul Srinivasan Prabu</title>
+  <style>
+    :root { color-scheme: light; }
+    body {
+      font-family: "Times New Roman", Times, serif;
+      max-width: 42rem;
+      margin: 2.5rem auto;
+      padding: 0 1.25rem 3rem;
+      line-height: 1.45;
+      color: #111;
+    }
+    h1 { font-size: 1.45rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .meta { color: #333; margin: 0.25rem 0; }
+    a { color: #0b57d0; }
+    .links { margin: 1.1rem 0 1.4rem; }
+    .links a { margin-right: 1.1rem; }
+    h2 { font-size: 1.05rem; margin-top: 1.6rem; }
+    p { text-align: justify; }
+  </style>
+</head>
+<body>
+  <h1>Detecting Synthetic-Data Contamination in Tabular and Time-Series Training Pipelines</h1>
+  <p class="meta"><strong>Gokul Srinivasan Prabu</strong></p>
+  <p class="meta">Department of Artificial Intelligence and Data Science,<br />
+  Sri Krishna College of Engineering and Technology, Coimbatore, India</p>
+  <p class="meta"><a href="mailto:gokulsrinivasan2020@gmail.com">gokulsrinivasan2020@gmail.com</a> · preprint, September 2026</p>
+  <p class="links">
+    <a href="paper/ms.pdf">PDF</a>
+    <a href="https://github.com/Gokul7707/synthetic-data-contamination">Code and source</a>
+    <a href="https://github.com/Gokul7707/synthetic-data-contamination/blob/main/ARXIV.md">Submit to arXiv (free)</a>
+  </p>
+  <h2>Abstract</h2>
+  <p>
+    Generative models are now routinely used to enlarge scarce tabular and time-series datasets.
+    The resulting training mix can look statistically faithful while still degrading performance on future real observations.
+    This paper studies that failure mode as a data-contamination problem rather than a generator-quality contest.
+    We freeze a sealed real holdout that no generator is allowed to see, replace a controlled fraction of the training set with synthetic samples, and measure what happens to ordinary downstream learners.
+    Across 405 tabular runs, a Random Forest trained on a 70% Gaussian-copula mix lost 6.72% macro-F1 relative to a clean baseline, while holdout error rose by 54.3%.
+    The Wine task dropped from a perfect 1.000 macro-F1 to 0.858.
+    On Melbourne daily minimum temperatures, seasonal residual bootstrap at the same mix raised normalized MAE from 0.154 to 0.212.
+    Train-set Kolmogorov–Smirnov fidelity was only weakly related to sealed-holdout error (Pearson r = 0.15).
+  </p>
+  <h2>How to cite</h2>
+  <p>
+    G.&nbsp;S.&nbsp;Prabu, “Detecting Synthetic-Data Contamination in Tabular and Time-Series Training Pipelines,” 2026.
+    [Online]. Available: https://github.com/Gokul7707/synthetic-data-contamination
+  </p>
+</body>
+</html>
